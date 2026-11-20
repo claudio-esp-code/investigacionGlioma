@@ -1,0 +1,34 @@
+# Modelling environment: feature selection, XGBoost, SHAP, Bayesian networks, ANFIS.
+# Versions match the environment used for the paper (Python 3.12.7).
+# The original run used CUDA builds of PyTorch and XGBoost; CPU builds give the same pipeline.
+#
+#   conda env create -f environment-modeling.yml
+#   conda activate glioma_env
+name: glioma_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.7
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.1
+  - scikit-learn=1.5.1
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+  - networkx=3.2.1
+  - openpyxl=3.1.5
+  - tqdm=4.66.5
+  - threadpoolctl=3.5.0
+  - joblib=1.4.2
+  - ipykernel
+  - jupyter
+  - pip
+  - pip:
+      - xgboost==2.1.3
+      - shap==0.46.0
+      - lime==0.2.0.1
+      - torch==2.5.0
+      - pgmpy==0.1.26
+      - imbalanced-learn==0.12.4
+      - hdbscan==0.8.40

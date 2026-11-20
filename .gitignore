@@ -1,0 +1,25 @@
+# Patient data (EGD is under a data use agreement; do not commit)
+original_datasets/
+tabular_data/
+radiomics/radiomics_embeddings/
+*.nii
+*.nii.gz
+*.xlsx
+*.mat
+
+# Large intermediate outputs
+radiomics/*.csv
+*.pth
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+
+# Generated outputs (reproduce with the notebooks)
+radiomics/results/
+radiomics/anfis_cv_reports/
+radiomics/bn_*/
+radiomics/lime_reports/
